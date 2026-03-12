@@ -3,7 +3,7 @@ import { getPage } from "@/hooks/useGetPage";
 import Link from "next/link";
 
 export default function HeroSection() {
-  const cvPath = "/assets/Cv_Syahroni_Frontend_Dev.pdf";
+  const cvPath = "/cv/Cv_Syahroni_Frontend_Dev.pdf";
   return (
     <section className="min-h-[98vh] flex flex-col items-center justify-center">
       <div className="inline-flex items-center gap-2  rounded-full border border-black/5 bg-white/50 px-4 py-2 text-sm font-medium text-neutral-700 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-white/5 dark:text-neutral-300">
