@@ -3,6 +3,7 @@ import { getPage } from "@/hooks/useGetPage";
 import Link from "next/link";
 
 export default function HeroSection() {
+  const cvPath = "/assets/Cv_Syahroni_Frontend_Dev.pdf";
   return (
     <section className="min-h-[98vh] flex flex-col items-center justify-center">
       <div className="inline-flex items-center gap-2  rounded-full border border-black/5 bg-white/50 px-4 py-2 text-sm font-medium text-neutral-700 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-white/5 dark:text-neutral-300">
@@ -28,7 +29,7 @@ export default function HeroSection() {
         Next.js, and Tailwind CSS.
       </p>
 
-      <div className="mt-10 flex flex-wrap justify-center gap-4">
+      <section className="mt-10 flex flex-wrap justify-center gap-4">
         <Link
           href="#projects"
           onClick={(e) => getPage(e, "projects")}
@@ -44,7 +45,17 @@ export default function HeroSection() {
         >
           Contact Me
         </Link>
-      </div>
+        <Link
+          href={cvPath}
+          download="Cv_Syahroni"
+          className="relative inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300
+            bg-linear-to-r from-blue-500 via-indigo-500 to-purple-500
+            hover:from-blue-600 hover:via-indigo-600 hover:to-purple-600
+            hover:-translate-y-1 hover:shadow-xl active:scale-95"
+        >
+          Download CV
+        </Link>
+      </section>
     </section>
   );
 }
