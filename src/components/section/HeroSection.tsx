@@ -45,7 +45,7 @@ export default function HeroSection() {
         >
           Contact Me
         </Link>
-        <Link
+        <a
           href={cvPath}
           download="Cv_Syahroni"
           className="relative inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300
@@ -54,7 +54,7 @@ export default function HeroSection() {
             hover:-translate-y-1 hover:shadow-xl active:scale-95"
         >
           Download CV
-        </Link>
+        </a>
       </section>
     </section>
   );
