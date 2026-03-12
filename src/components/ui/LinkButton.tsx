@@ -1,32 +1,23 @@
 import { LucideIcon } from "lucide-react";
 import Link from "next/link";
 
-export default function LinkButton({
-  social,
-  imageWeb: Icon,
-  darkModes,
-  text,
-}: {
+type Props = {
   social: string;
   imageWeb?: LucideIcon;
   text?: string;
-  darkModes: boolean;
-}) {
+};
+
+export default function LinkButton({ social, imageWeb: Icon, text }: Props) {
   return (
     <Link
       href={social}
       target="_blank"
       rel="noreferrer"
-      className={`transition-transform hover:scale-110 ${darkModes ? "invert" : ""}`}
+      aria-label={text ? undefined : social} // fallback kalau text kosong
+      className="flex items-center gap-2 transition-transform hover:scale-110 text-black dark:text-white"
     >
-      {Icon && !text && <Icon size={25} className="dark:invert" />}
-      {text && !Icon && <span className="ml-2">{text}</span>}
-      {text && Icon && (
-        <section className="flex gap-2">
-          <p className="dark:invert">{text}</p>
-          <Icon size={25} className="dark:invert" />
-        </section>
-      )}
+      {Icon && <Icon aria-hidden={text ? true : false} size={25} />}
+      {text && <span>{text}</span>}
     </Link>
   );
 }

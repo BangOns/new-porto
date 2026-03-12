@@ -1,22 +1,12 @@
+import { getPage } from "@/hooks/useGetPage";
 import Link from "next/link";
-import React from "react";
 
-export default function NavLink({
-  item,
-  darkModes,
-  GetPage,
-}: {
-  item: string;
-  darkModes: boolean;
-  GetPage: (e: React.MouseEvent<HTMLAnchorElement>, id: string) => void;
-}) {
+export default function NavLink({ item }: { item: string }) {
   return (
     <Link
       href={`#${item}`}
-      onClick={(e) => GetPage(e, item)}
-      className={`capitalize font-medium transition-colors hover:text-blue-500 ${
-        darkModes ? "text-neutral-300" : "text-neutral-600"
-      }`}
+      onClick={(e) => getPage(e, item)}
+      className={`capitalize font-medium text-neutral-600 font-sans  dark:text-neutral-300 transition-colors hover:text-blue-500 `}
     >
       {item}
     </Link>
