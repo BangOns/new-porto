@@ -60,7 +60,7 @@ export default function SkillSection() {
         />
         <SkillCategory
           title="Database"
-          icon={<SiMongodb className="h-4 w-4 text-black" />}
+          icon={<SiMongodb className="h-4 w-4 text-[#42B883]" />}
           skills={Database}
           delay={0.2}
         />

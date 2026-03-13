@@ -48,10 +48,10 @@ export default function HeroSection() {
         <a
           href={cvPath}
           download="Cv_Syahroni"
-          className="relative inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300
+          className={`relative inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300
             bg-linear-to-r from-blue-500 via-indigo-500 to-purple-500
             hover:from-blue-600 hover:via-indigo-600 hover:to-purple-600
-            hover:-translate-y-1 hover:shadow-xl active:scale-95"
+            hover:-translate-y-1 hover:shadow-xl active:scale-95`}
         >
           Download CV
         </a>

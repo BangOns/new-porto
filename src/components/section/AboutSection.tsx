@@ -51,10 +51,11 @@ export default function AboutSection() {
           </span>
         </h2>
         <p className="max-w-2xl text-lg text-neutral-600 dark:text-neutral-400">
-          I am a dedicated Frontend Developer with a focus on creating seamless
+          I am a dedicated Frontend Developer with 1 year of professional
+          experience in building modern web applications and creating seamless
           user experiences. My approach combines technical precision with
-          creative problem-solving to build applications that are not only
-          functional but also delightful to use.
+          creative problem-solving to develop applications that are not only
+          functional but also enjoyable to use.
         </p>
       </motion.div>
 

@@ -76,12 +76,7 @@ export default function ProjectSection() {
               </CardHeader>
 
               <CardDescription>
-                <div className="text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Laboriosam architecto asperiores temporibus dolores, incidunt
-                  sed ratione voluptas amet fuga aperiam exercitationem cumque
-                  minima, cum corporis error deleniti magni explicabo soluta?
-                </div>
+                <div className="text-center">{project.description}</div>
               </CardDescription>
               <CardAction>
                 <div className="flex gap-3">
