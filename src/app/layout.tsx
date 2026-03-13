@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     "Web Development",
   ],
   authors: [{ name: "Syahroni" }],
+  verification: {
+    google: "3eTpbPqgIa-oneDbW7MaxZOkVFBlPrdNeAePDLBpvuU",
+  },
   openGraph: {
     title: "Syahroni | Frontend Developer Portfolio",
     description:
@@ -42,6 +45,8 @@ export const metadata: Metadata = {
         url: "/img/og-image.png",
         width: 1200,
         height: 630,
+        alt: "Syahroni Icon",
+        type: "image/png",
       },
     ],
     locale: "id_ID",
