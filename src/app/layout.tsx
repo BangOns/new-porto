@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     title: "Syahroni | Frontend Developer Portfolio",
     description:
       "Explore my projects and web applications built with modern frontend technologies.",
-    url: "https://your-portfolio-domain.com",
+    url: "https://syahroni-porto.vercel.app",
     siteName: "Syahroni Portfolio",
     images: [
       {
-        url: "/favicon.ico", // bisa bikin screenshot portfolio atau logo
+        url: "/img/og-image.png",
         width: 1200,
         height: 630,
       },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Syahroni | Frontend Developer Portfolio",
     description:
       "Explore my projects and web applications built with modern frontend technologies.",
-    images: ["/favicon.ico"],
+    images: ["/img/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
